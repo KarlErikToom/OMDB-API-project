@@ -1,82 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.yellow{
-    color: rgb(230, 176, 30);
+.yellow {
+  color: rgb(230, 176, 30);
 }
-
-
-
 
 /*
 NAVIGATION
 */
 
-#nav{
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.925);
+#nav {
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.925);
 }
-.nav__header{
-    color: white;
-    font-weight: bold;
-    font-size: 54px;
-    text-align: center;
-    padding-top: 12px;
+.nav__header {
+  color: white;
+  font-weight: bold;
+  font-size: 54px;
+  text-align: center;
+  padding-top: 12px;
 }
 
 /*
 SEARCH
 */
 
-#search{
-    height: 20vh;
-    background-color: rgba(0, 0, 0, 0.692);
+#search {
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.692);
 }
 
-.search__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5vh;
-    position: relative;
+.search__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
+  position: relative;
 }
-.search__header{
-    font-size: 32px;
-    color: white;
+.search__header {
+  font-size: 32px;
+  color: white;
 }
-.search__input{
-    margin-top: 12px;
-    padding: 12px 24px;
-    width: 20%;
+.search__input {
+  margin-top: 12px;
+  padding: 12px 24px;
+  width: 20%;
 }
-.search__button{
-    padding: 6px;
-    position: absolute;
-    top: 70%;
-    right: 40%;
-    border: none;
-    background-color: white;
-    font-size: 24px;
-    cursor: pointer;
+.search__button {
+  padding: 6px;
+  position: absolute;
+  top: 70%;
+  right: 40%;
+  border: none;
+  background-color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /*
 MOVIES
 */
 
-#movies{
-    height: 70vh;
+#movies {
+  height: 70vh;
+  width: 100%;
 }
-.searched__movie{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 12px;
+.searched__movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
 }
-.movie__header{
-    margin-right: 24rem;
+.movie__header {
+  margin-right: 24rem;
+}
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.movie__box {
+  border: 1px solid rgb(236, 140, 14);
+  margin: 12px;
+  width: 20%;
+  padding: 24px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movie__img--wrapper {
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.movie__img {
+  max-height: 380px;
+  height: 300px;
 }

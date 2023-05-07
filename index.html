@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="nav">
-        <h1 class="nav__header">Movies <span class="yellow">Forever</span></h1>
+      <h1 class="nav__header">Movies <span class="yellow">Forever</span></h1>
     </nav>
     <section id="search">
-        <div class="search__container">
-            <h2 class="search__header">Search Movie</h2>
-            <input type="text" class="search__input" placeholder="Search for movie ..">
-            <button class="search__button">→</button>
-        </div>
+      <div class="search__container">
+        <h2 class="search__header">Search Movie</h2>
+        <input
+          type="text"
+          class="search__input"
+          placeholder="Search for movie .."
+          onkeyup="findMovies()"
+        />
+        <button class="search__button">→</button>
+      </div>
     </section>
     <section id="movies">
-        <div class="searched__movie">
-            <h2 class="movie__header">Showing movies named :</h2>
-            <p >movie name</p>
-        </div>
+      <div class="searched__movie">
+        <h2 class="movie__header">Showing movies named :</h2>
+        <p>movie name</p>
+      </div>
 
-        <div class="movies">
-            <div class="movie__box">
-                <div class="movie__box--container">
-                    <img src="assets/batman.jfif" alt="">
-                    <h2 class="movie__title">The Batman</h2>
-                    <p class="movie__date">2022</p>
-                    <p class="movie__genre">action</p>
-                    <p class="movie__director">Matt Reeves</p>
-                </div>
+      <div class="movies">
+        <div class="movie__box">
+          <div class="movie">
+            <div class="movie__box--container">
+              <figure class="movie__img--wrapper">
+                <img class="movie__img" src="assets/batman.jfif" alt="" />
+              </figure>
+              <h2 class="movie__title">Movie Title: The Batman</h2>
+              <p class="movie__date">Release Date : 2022</p>
+              <p class="movie__genre">Genre : action</p>
+              <p class="movie__director">Director: Matt Reeves</p>
             </div>
+          </div>
         </div>
+        
+      </div>
     </section>
-</body>
+  </body>
 </html>
